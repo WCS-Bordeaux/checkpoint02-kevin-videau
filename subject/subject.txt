@@ -138,19 +138,49 @@ qui seront affichés avec une boucle dans le template du component attaché à c
 Sinon tu peux aussi répondre en dessous de chaque question.
 
 a) Pourquoi utiliser $resource dans angular plutôt que $http ?
-b) C'est quoi la différence entre front-end et back-end en fait ?
+$http est de plus bas niveau que $ressource.
+$http utlise ajax, $ressource est plus compréhensible pour l'homme, plus rapide a mettre en place
+
+
+b) C'est quoi la différence entre front-end et back-end en fait ? 
+
+Le front-end est du côté client alors le back-end est côté serveur.
+Le front-end c'est ce qui est visible pour le client (affiche de la page html). Le back-end n'est pas visible par l'utilisateur mais il permet le bon fonctionnement et l'interaction entre les pages.
+
 c) Pourquoi je peux pas utiliser document.getElementById dans NodeJS ?
+Parce que Nodejs embarque Jquery et que l'on peut utilisé $
+
 d) Pourquoi c'est très grave d'utiliser document.getElementById dans AngularJS ?
+Ce n'est pas une bonne méthode cela a lourdi le code.
+
 e) C'est quoi la différence entre NodeJS et Javascript ?
+Javascript est un langage de programmation définit par ECMAscript
+Nodejs est un interprète et un environnement pour javascript qui comprend un tas de bibliothèques. 
+
 f) En quoi c'est utile d'utiliser npm ?
+C'est plus rapide et plus simple, il s'excute puis le ternimal.
+
 g) A quoi ça sert une base de donnée ? Et mongoDB ?
+A stocké et a classé des données de tels sorte qu'on puisse y accéder facilement et retrouvé n'importe données par un id unique ou un critére.
+MongoDB (data base) met en place tout cela.
+
 h) Est-il possible de faire des relations entre plusieurs collections ? Est-ce une bonne pratique ?
+Oui on peut mettre en relation c'est même une bonne pratique. 
+Dans l'exercice précedent on n'a pu voir une relation entre les collections note.json et users.json grâce a un id
 i) C'est quoi un document dans mongoDB ? et une collection au final ?
+
 j) Quelle serai la requête qui me permettrai d'aller chercher dans 
     ma db "toto" dans la collection "tata" l'utilisateur ayant pour nom "titi" ?
+get toto/tata/name: titi
+
 k) Est-il plus important de sécuriser le client ou le serveur ? Pourquoi ?
+
 l) Pourquoi [1, 2, 3, () => "boom"][Number(true) + 2]() === "boom" ? Expliquez le plus précisément possible.
+
 m) Cite 3 directives angularjs.
+
+ngBind, ngModel, et ngClass
+
 
 
 
@@ -165,5 +195,4 @@ Dans cet ordre c'est mieux:
     - faire un autre CRUD pour les notes.
     - faire le CRUD des users + notes côté angular (donc rendre tout editable) qui consomme les deux CRUD.
     - un ptit coup de CSS ?
-
 
