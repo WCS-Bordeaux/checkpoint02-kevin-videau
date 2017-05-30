@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('wildNoteApp')
+angular.module("wildNoteApp")
 
     .component('home', {
         url: '/app/components/home/home.html',
